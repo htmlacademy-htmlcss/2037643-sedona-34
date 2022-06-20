@@ -340,7 +340,7 @@ padding-top: 63px;
   height: 60px;
   background: #f2f2f2;
   border: none;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 10px 0 0 10px;
   padding: 0;
 }
 .subscription-button {
@@ -355,7 +355,7 @@ padding-top: 63px;
   color: #ffffff;
   text-transform: uppercase;
   background: #82b3d3;
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0 10px 10px 0;
   border: none;
   width: 200px;
   height: 60px;
@@ -579,19 +579,22 @@ margin-right: 26px;
 }
 
 .catalog-list {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
   list-style: none;
   padding: 0;
   margin: 0 auto;
   width: 1056px;
+  margin-bottom: 97px;
 }
 
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   width: 340px;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 20px 30px 20px;
 }
 
 .catalog-item-link {
@@ -600,6 +603,7 @@ margin-right: 26px;
 
 .catalog-item-img{
   display: block;
+  object-fit: contain;
 }
 
 .catalog-item-title {
@@ -607,6 +611,27 @@ margin-right: 26px;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 16px 0 16px 0;
+}
+
+.catalog-item-subtitle{
+  margin: 0;
+}
+
+.catalog-item-price{
+  margin: 0;
+}
+
+.catalog-item-price-wrapper{
+  display: grid;
+  grid-template-columns: 133px 143px;
+  margin-bottom: 16px;
+}
+
+.catalog-item-button-wrapper{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .select-price {
@@ -674,6 +699,7 @@ margin-right: 26px;
   border-radius: 4px;
   width: 160px;
   height: 37px;
+  align-self: flex-end;
 }
 
 .catalog-item-favorites-button-active {

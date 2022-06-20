@@ -92,12 +92,11 @@
                 <legend class="catalog-filter-legend">Стоимость, ₽:</legend>
                 <div class="input-range-wrapper">
                   <label for="price-range-from">от</label>
-                  <input type="number" name="price-range-from" id="price-range-from">0</input>
+                  <input type="number" name="price-range-from" id="price-range-from">
                   <label for="price-range-to">до</label>
-                  <input type="number" name="price-range-to" id="price-range-to">9000</input>
+                  <input type="number" name="price-range-to" id="price-range-to">
                 </div>
                 <input class="range" type="range">
-              </fieldset>
               </fieldset>
               <div class="filter-button-wrapper">
                 <button class="catalog-filter-button-submit" type="submit">Применить</button>
@@ -138,21 +137,29 @@
                 <img class="catalog-item-img" src="images/catalog-item-1.jpg" alt="Amara Resort & Spa" width="300" height="211">
                 <h3 class="catalog-item-title">Amara Resort & Spa</h3>
               </a>
-              <p class="catalog-item-subtitle">Гостиница</p>
-              <p class="catalog-item-price">От 4000 ₽</p>
-              <a class="catalog-item-button catalog-item-detailed-button" href="#">Подробнее</a>
-              <a class="catalog-item-button catalog-item-favorites-button" href="#">в избранное</a>
-              <span class="catalog-item-rating">Рейтинг: 8,5</span>
+              <div class="catalog-item-price-wrapper">
+                <p class="catalog-item-subtitle">Гостиница</p>
+                <p class="catalog-item-price">От 4000 ₽</p>
+              </div>
+              <div class="catalog-item-button-wrapper">
+                <a class="catalog-item-button catalog-item-detailed-button" href="#">Подробнее</a>
+                <a class="catalog-item-button catalog-item-favorites-button" href="#">в избранное</a>
+              </div>
+                <span class="catalog-item-rating">Рейтинг: 8,5</span>
             </li>
             <li class="catalog-item">
               <a class="catalog-item-link" href="#">
                 <img class="catalog-item-img" src="images/catalog-item-2.jpg" alt="Villas at Poco Diablo" width="300" height="211">
                 <h3 class="catalog-item-title">Villas at Poco Diablo</h3>
               </a>
-              <p class="catalog-item-subtitle">Гостиница</p>
-              <p class="catalog-item-price">От 5000 ₽</p>
-              <a class="catalog-item-button catalog-item-detailed-button" href="#">Подробнее</a>
-              <a class="catalog-item-button catalog-item-favorites-button-active" href="#">в избранном</a>
+              <div class="catalog-item-price-wrapper">
+                <p class="catalog-item-subtitle">Гостиница</p>
+                <p class="catalog-item-price">От 5000 ₽</p>
+              </div>
+              <div class="catalog-item-button-wrapper">
+                <a class="catalog-item-button catalog-item-detailed-button" href="#">Подробнее</a>
+                <a class="catalog-item-button catalog-item-favorites-button-active" href="#">в избранном</a>
+              </div>
               <span class="catalog-item-rating">Рейтинг: 9,2</span>
             </li>
             <li class="catalog-item">
@@ -160,10 +167,14 @@
                 <img class="catalog-item-img" src="images/catalog-item-3.jpg" alt="Desert Quail Inn" width="300" height="211">
                 <h3 class="catalog-item-title">Desert Quail Inn</h3>
               </a>
-              <p class="catalog-item-subtitle">Гостиница</p>
-              <p class="catalog-item-price">От 2500 ₽</p>
-              <a class="catalog-item-button catalog-item-detailed-button" href="#">Подробнее</a>
-              <a class="catalog-item-button catalog-item-favorites-button" href="#">в избранное</a>
+              <div class="catalog-item-price-wrapper">
+                <p class="catalog-item-subtitle">Гостиница</p>
+                <p class="catalog-item-price">От 2500 ₽</p>
+              </div>
+              <div class="catalog-item-button-wrapper">
+                <a class="catalog-item-button catalog-item-detailed-button" href="#">Подробнее</a>
+                <a class="catalog-item-button catalog-item-favorites-button" href="#">в избранное</a>
+              </div>
               <span class="catalog-item-rating">Рейтинг: 6,9</span>
             </li>
             <li class="catalog-item">
@@ -171,10 +182,14 @@
                 <img class="catalog-item-img" src="images/catalog-item-4.jpg" alt="GreenTree Inn" width="300" height="211">
                 <h3 class="catalog-item-title">GreenTree Inn</h3>
               </a>
+              <div class="catalog-item-price-wrapper">
                 <p class="catalog-item-subtitle">Гостиница</p>
                 <p class="catalog-item-price">От 1500 ₽</p>
-              <a class="catalog-item-button catalog-item-detailed-button" href="#">Подробнее</a>
-              <a class="catalog-item-button catalog-item-favorites-button" href="#">в избранное</a>
+              </div>
+              <div class="catalog-item-button-wrapper">
+                <a class="catalog-item-button catalog-item-detailed-button" href="#">Подробнее</a>
+                <a class="catalog-item-button catalog-item-favorites-button" href="#">в избранное</a>
+              </div>
               <span class="catalog-item-rating">Рейтинг: 5,0</span>
             </li>
           </ul>
