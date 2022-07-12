@@ -307,7 +307,7 @@ body {
 }
 
 .advantage-count-white::after{
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #FFFFFF;
@@ -318,7 +318,7 @@ body {
 }
 
 .advantage-count-black::after{
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', sans-serif;
   font-style: normal;
   font-weight: 400;
   color: #000000;
@@ -403,10 +403,6 @@ body {
   background-repeat: no-repeat;
   background-size: 64px auto;
   background-position: top;
-}
-
-.advantage-wrapper .advantage-item:nth-child(n+6):nth-child(-n+8) .advantage-item-wrapper{
-  margin: 103px 85px 102px 85px;
 }
 
 .advantage-item:nth-child(2n + 2) {
