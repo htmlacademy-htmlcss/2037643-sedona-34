@@ -142,45 +142,52 @@ body {
 
 /**header*/
 
+.main-navigation{
+  padding: 0 70px;
+}
+
 .header-container {
   display: flex;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
   position: absolute;
-  margin-left: 70px;
 }
 
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-left: 239px;
+  margin-left: 170px;
   width: 450px;
 }
 
+.navigation-item{
+  padding: 20px 17px 19px 17px;
+  cursor: pointer;
+}
+
 .navigation-item-link{
+  display: block;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
-  padding: 20px 17px 20px 17px;
 }
 
-.navigation-item-link:hover{
+.navigation-item:hover{
   background-color: #D3D3D3;
 }
 
-.navigation-item-link:focus{
+.navigation-item:focus{
   background-color: #D3D3D3;
 }
 
-.navigation-item-link:active{
+.navigation-item:active{
   background-color: #C0C0C0;
 }
 
@@ -190,38 +197,40 @@ body {
 
 .navigation-item-link-current::after{
   position: absolute;
-  bottom: 0;
+  bottom: -20px;
   left: 0;
   right: 0;
   margin: auto;
   content: "";
   height: 2px;
-  width: 68px;
+  width: inherit;
   background-color: #756257;
 }
 
 .user-navigation-list {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
   align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 19px;
 }
 
-.user-navigation-item:last-child{
-  margin-left: 20px;
-}
-
-.user-navigation-item:not(:last-child) a{
+.user-navigation-link{
   display: block;
-  width: 42px;
-  height: 66px;
+  min-width: 42px;
+  min-height: 65px;
 }
 
-.header-button {
+.header-button-wrapper{
+  display: flex;
+  align-items: center;
+}
+
+.header-button{
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -287,14 +296,14 @@ body {
 }
 
 .promo-title-img {
-  margin: 51px auto 83px auto;
+  margin: 51px auto 81px auto;
 }
 
 /**advantage*/
 
 .advantage{
-padding-top: 63px;
-counter-set: advantage-count;
+  padding-top: 64px;
+  counter-set: advantage-count;
 }
 
 .advantage-count-white::after{
@@ -495,8 +504,13 @@ counter-set: advantage-count;
 .subscription-index {
   background-image: url("../images/subscription-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-color: #000000;
+  padding-top: 94px;
+}
+
+.subscription-catalog{
+  margin-top: 90px;
 }
 
 .subscription-email {
@@ -544,10 +558,11 @@ counter-set: advantage-count;
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   width: 116px;
   padding: 0;
-  margin: 49px 0 54px 72px;
+  margin: 56px 0 54px 83px;
 }
 
 .social-item-icon{
@@ -577,7 +592,7 @@ margin-right: 26px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  margin: 45px auto 35px auto;
+  margin: 45px 235px 35px auto;
 }
 
 .phone:hover{
@@ -593,7 +608,7 @@ margin-right: 26px;
 }
 
 .footer-logo {
-  margin: 44px 72px 43px 0;
+  margin: 49px 70px 43px 0;
 }
 
 .footer-logo-icon{
@@ -974,10 +989,9 @@ margin-right: 26px;
 .catalog-filter {
   background-image: url("../images/catalog-filter-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
+  background-size: 100% 100%;
   background-color: #000000;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 71px 70px;
   margin-bottom: 15px;
 }
 
@@ -991,17 +1005,21 @@ margin-right: 26px;
 
 .catalog-filter-title {
   font-weight: 700;
+  font-style: normal;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 9px;
 }
 
 /* Хлебные крошки */
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
+  margin-left: 3px;
 }
 
 .breadcrumbs-item {
@@ -1055,7 +1073,7 @@ margin-right: 26px;
 }
 
 .catalog-filter-group:nth-child(2){
-  margin-left: 70px;
+  margin-left: 74px;
 }
 
 .catalog-filter-group:nth-child(3){
@@ -1074,11 +1092,12 @@ margin-right: 26px;
   color: #ffffff;
   padding: 0;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .filter-label{
   position: relative;
-  padding-left: 40px;
+  padding-left: 36px;
 }
 
 .catalog-filter-list{
@@ -1097,6 +1116,7 @@ margin-right: 26px;
 
 .filter-input{
   position: relative;
+  -moz-appearance: none;
 }
 
 /* Колонка инфраструктура */
@@ -1197,7 +1217,7 @@ margin-right: 26px;
 
 .input-range-wrapper{
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .price-range-input{
@@ -1304,7 +1324,7 @@ margin-right: 26px;
 }
 
 .range-toggle:disabled{
-  opacity: 0.6;
+  background-color: #808080;
 }
 
 .price-range-input:hover{
@@ -1337,6 +1357,7 @@ margin-right: 26px;
   flex-direction: column;
   align-items: center;
   margin: auto 0 0 70px;
+  position: relative;
 }
 
 /* Кнопка применить */
@@ -1351,7 +1372,7 @@ margin-right: 26px;
   background: #82b3d3;
   border-radius: 4px;
   border: none;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding: 14px 35px 14px 35px;
 }
 
@@ -1361,6 +1382,8 @@ margin-right: 26px;
 
 /* Кнопка сбросить */
 .catalog-filter-button-reset {
+  position: absolute;
+  top: 63px;
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
@@ -1380,8 +1403,12 @@ margin-right: 26px;
 /**catalog*/
 
 .catalog{
-  padding-top: 50px;
+  padding-top: 39px;
   padding-bottom: 29px;
+}
+
+.catalog .section-title{
+  margin: 4px 0 0 0;
 }
 
 .select-price {
@@ -1429,6 +1456,7 @@ margin-right: 26px;
 
 .appearance-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-left: auto;
@@ -1489,7 +1517,7 @@ margin-right: 26px;
   flex-direction: column;
   width: 340px;
   box-sizing: border-box;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .catalog-item-link {
@@ -1506,7 +1534,7 @@ margin-right: 26px;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin: 16px 0 16px 0;
+  margin: 16px 0 16px 1px;
 }
 
 .catalog-item-subtitle{
@@ -1514,7 +1542,7 @@ margin-right: 26px;
 }
 
 .catalog-item-price{
-  margin: 0;
+  margin: 0 0 0 4px;
 }
 
 .catalog-item-price-wrapper{
@@ -1557,7 +1585,7 @@ margin-right: 26px;
 
 .divider{
   border: 1px solid #E6E6E6;
-  margin: 0 auto 31px auto;
+  margin: 0 auto 27px auto;
   width: 1055px;
 }
 
@@ -1570,6 +1598,7 @@ margin-right: 26px;
 
 .pagination-wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .number-hotels-wrapper{
@@ -1577,7 +1606,7 @@ margin-right: 26px;
 }
 
 .hotels-number-title{
-  margin: 16px 51px 18px 0;
+  margin: 22px 51px 18px 0;
 }
 
 .select-hotels-number {
@@ -1587,11 +1616,11 @@ margin-right: 26px;
   color: #333333;
   width: 160px;
   height: 49px;
-  margin: 3px 0 4px 0;
+  margin: 6px 0 0 0;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   appearance: none;
-  padding-left: 20px;
+  padding-left: 18px;
   background-image: url("../images/select-arrow.svg");
   background-repeat: no-repeat;
   background-size: 12px 8px;
@@ -1628,6 +1657,7 @@ margin-right: 26px;
   background: #756157;
   border-radius: 4px;
   padding: 9px 26px 8px 26px;
+  margin-left: 1px;
 }
 
 .catalog-item-favorites-button {
@@ -1650,7 +1680,7 @@ margin-right: 26px;
   text-transform: uppercase;
   background: #f2f2f2;
   border-radius: 4px;
-  width: 160px;
+  width: 139px;
   height: 37px;
   align-self: flex-end;
 }
@@ -1674,12 +1704,12 @@ margin-right: 26px;
   border: 1px solid #82b3d3;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 55px;
-  height: 55px;
+  min-width: 61px;
+  min-height: 61px;
 }
 
 .pagination-item:not(:last-child){
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
 .pagination-item:hover:not(.pagination-item-current){
@@ -1710,7 +1740,6 @@ margin-right: 26px;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
