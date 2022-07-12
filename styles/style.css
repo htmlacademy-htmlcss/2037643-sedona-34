@@ -862,6 +862,16 @@ margin-right: 26px;
   opacity: 0.3;
 }
 
+.button-age-minus-icon{
+  margin-bottom: 4px;
+  margin-left: 3px;
+}
+
+.button-age-plus-icon{
+  margin-top: 3px;
+  margin-right: 5px;
+}
+
 .button-age:hover .button-age-icon{
   fill: #000000;
   opacity: 1;
@@ -916,6 +926,7 @@ margin-right: 26px;
   border-radius: 10px;
   border: none;
   padding: 0;
+  margin-left: 3px;
 }
 
 .modal-button-submit:hover{
