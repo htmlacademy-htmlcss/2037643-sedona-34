@@ -1,7 +1,7 @@
 @font-face {
   font-family: "PT Sans";
   font-style: "normal";
-  font-weight: "700";
+  font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: "PT Sans";
   font-style: "normal";
-  font-weight: "400";
+  font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
@@ -836,6 +836,7 @@ margin-right: 26px;
 .input-age{
   text-align: center;
   appearance: textfield;
+  border-radius: 0;
 }
 
 .input-age:focus{
@@ -1105,6 +1106,7 @@ margin-right: 26px;
 .filter-label{
   position: relative;
   padding-left: 36px;
+  cursor: pointer;
 }
 
 .catalog-filter-list{
